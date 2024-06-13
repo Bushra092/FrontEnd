@@ -30,6 +30,6 @@ toasts.forEach((toast) => {
 
     let timeout = setTimeout(() => {
       elem.remove();
-    }, 10000);
+    }, 5000);
   });
 });
