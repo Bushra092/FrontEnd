@@ -1,0 +1,195 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh; 
+    background: linear-gradient( 90deg, #F9E6FF, #D9FDFF, #FFEAD1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+ 
+
+.profileCard{ 
+    width: 85%;
+    height: 450px;
+    background: rgba(252, 252, 252, 0.514);
+    display: flex;
+    gap: 10px;
+    padding: 25px 45px;
+   
+    border: 20px solid rgb(248, 243, 243);
+    border-radius: 15px;
+    border-radius: 10px;
+}
+
+.imgDiv{
+    width: 30%;  
+    margin: -5px 10px;
+
+} .imgDiv img{
+    border-radius: 50%;
+    height: 65% ;
+    border: 10px solid #E5E6E7;
+    margin-left: 35px;
+ }
+
+ 
+.infoDiv{
+    width: 70%; 
+    margin: 15px 10px;
+    letter-spacing: 1px
+}
+
+.firstChild{
+    color:#6D7089;
+}
+
+.infoDiv h1{
+    font-size: 40px;
+}
+.infoDiv > p{
+    font-size: 25px; 
+    margin: 5px 0;
+    width: 90%;
+
+}
+.moreInfo{
+    display: flex;
+    gap: 10px;
+    position: relative;
+    margin: 25px 0;
+}
+.moreInfo div {
+    position: relative; 
+}
+.moreInfo div::before{
+    content: '';     
+    position: absolute;
+    top: 0; 
+    left: 0;
+    transform: translate(-1200%, 0);
+    border-left: 2px solid #141843;
+    height: 55px;
+}
+.moreInfo div{
+    margin: 15px 20px 0 0 ;
+}
+.moreInfo div:nth-child(1)::before{
+    content: none;
+}
+
+.moreInfo p{
+    font-size: 20px;
+    margin-right: 10px;
+
+}
+
+button{
+    width: 140px;
+    height: 50px;
+    margin-right: 25px;
+    border: 2px solid;
+    border-radius: 10px;
+    background-color: #AEF1F5;
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 15px;
+}
+
+.viewProfile{
+  background-color:  #FFE4C4;
+}
+
+
+@media (max-width: 1230px) {
+    .imgDiv{
+        margin: 20px 15px;
+    }
+    .imgDiv img{
+        height: 50%;
+    border: 8px solid #E5E6E7;
+
+    }
+    .infoDiv{
+        margin: 20px 15px;
+    }
+    .infoDiv h1{
+        font-size: 30px;
+    }
+    .infoDiv > p{
+        font-size: 20px;
+        margin: 10px 0 0 0;
+    }
+    .moreInfo div{
+        margin: 10px 15px 0 0 ;
+    }
+    .moreInfo div::before{
+      height: 40px;
+    }   
+    .moreInfo p{
+        font-size: 15px;
+    }
+    button{
+        width: 120px;
+        height: 40px;
+        margin-right: 25px;
+        border: 2px solid;
+        border-radius: 10px;
+        background-color: #AEF1F5;
+        font-size: 16px;
+        font-weight: 600;
+        margin-top: 15px;
+    }   
+    
+}
+
+
+@media (max-width: 840px) {
+    .profileCard{
+        display: block;
+        width: 90%;
+        height: auto;
+    }
+    .imgDiv{ 
+        margin: 0 auto;
+    }
+    .imgDiv img{
+        height: 150px;
+        margin: 0 auto;
+    border: 8px solid #E5E6E7;
+
+    }
+    .infoDiv{
+        margin: 0 auto;
+        text-align: center;
+        width: 100%;
+    }
+    .infoDiv h1{
+        font-size: 30px;
+    }
+    .infoDiv > p{
+        font-size: 20px;
+        margin-left: 40px;
+        
+    }
+    .moreInfo{
+        margin: 25px 25%;
+    }
+    .moreInfo div{
+        margin: 10px 15px 0 0 ;
+        
+    }
+    .moreInfo div::before{
+      height: 55px;
+    }   
+    .moreInfo p{
+        font-size: 20px;
+        margin-right: 10px;
+    }
+}
