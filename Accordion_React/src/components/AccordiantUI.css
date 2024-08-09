@@ -1,0 +1,64 @@
+ 
+
+.accContainer {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 80%;
+  margin: 20px auto; /* Center the FAQ section */
+  max-width: 600px; /* Limit the width on larger screens */
+}
+
+.accContainer div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.accContainer h2 {
+  font-size: 16px;
+  font-weight: normal;
+  margin: 0;
+}
+
+.accContainer button {
+  background-color: #efefef;
+  border: none;
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  color: #7e57c2;
+  cursor: pointer;
+}
+
+.accContainer p {
+  margin: 10px 0 0 0;
+  font-size: 14px;
+}
+
+/* Media queries for responsive design */
+@media (max-width: 500px) {
+  .accContainer {
+    width: 90%;
+    padding: 15px;
+  }
+
+  .accContainer h2 {
+    font-size: 14px;
+  }
+
+  .accContainer button {
+    height: 25px;
+    width: 25px;
+    font-size: 18px;
+  }
+
+  .accContainer p {
+    font-size: 12px;
+  }
+}
