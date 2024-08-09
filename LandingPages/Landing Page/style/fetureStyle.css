@@ -1,0 +1,58 @@
+body{
+    background-color: aliceblue;
+}
+
+.featureContent{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    background-color: var(--);
+}
+
+.feature{
+    margin-top: 50px;
+    width: 350px;  
+    height: 400px;
+    padding: 2rem 1%;
+    position: relative;
+}
+
+img{
+    width: 100%; 
+    background-size: cover; 
+}
+
+.content{
+    display: none;
+}
+.fbtn{ 
+
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translate(-50%);
+
+}
+
+.content p {
+    margin-top: 15px;
+}
+
+.featureContent h2{
+    color: var(--logo);
+}
+
+.feature:hover{
+
+    img{
+        transform: scale();
+    }
+
+
+    .content{
+        display: block;
+    }
+
+}
