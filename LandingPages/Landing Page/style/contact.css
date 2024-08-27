@@ -1,0 +1,58 @@
+section{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.contact-section{
+    width: 100%;
+    height: 100vh;
+ 
+    background-image: url("../img/ideas.jpg");
+    background-position: top;
+    background-repeat: no-repeat;
+
+    background-size: cover; 
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contactData{
+    width: 50%; 
+    background-color:rgba(255, 255, 255, 0.251); 
+    border: none;
+    border-radius: 25px;
+    padding: 25px;
+
+}
+
+form div{
+    color: var(--secondary);
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 25px;
+    position: relative;
+
+}
+
+form div label{
+    position: absolute; 
+    top: 10px;
+    left: 10px;
+}
+
+form div input, 
+form div textarea{
+    padding: 15px 10px;
+    width: 500px;
+    border: 2px solid var(--secondary);
+    background-color: transparent;
+
+}
+form div:hover{
+    label{
+        top: -12px;
+        left: 15px;
+    }
+}
